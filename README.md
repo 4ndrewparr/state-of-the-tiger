@@ -1,5 +1,5 @@
 # state-of-the-tiger
-A simple D3.js data visualization to explore the conservation status of tigers
+A simple D3.js data visualization to explore the conservation status of tigers.
 
 ![GIF](https://github.com/4ndyparr/state-of-the-tiger/blob/master/sample.gif)
 

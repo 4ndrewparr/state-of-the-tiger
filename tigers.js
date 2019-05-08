@@ -263,7 +263,7 @@
                 }
                 d3.selectAll(".subspecies").transition().duration(750).style("opacity", 0)
                 // d3.select("#map_" + d.country.toLowerCase())                
-                d3.select("#map").attr("xlink:href", d.country + ".png")
+                d3.select("#map").attr("xlink:href", d.country.toLowerCase() + ".png") // while locally it is not case sensitive, in the Gist/bl.ocks .toLowerCase() must be applied
                 .transition().duration(1500).style("opacity", 1)
             })             
             .on("mouseover", function(d) {                

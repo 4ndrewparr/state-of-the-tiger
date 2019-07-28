@@ -1,5 +1,5 @@
 # state-of-the-tiger
-A simple D3.js data visualization to explore the conservation status of tigers **\- last updated 29th July 2019**.
+A simple D3.js data visualization project to explore the conservation status of tigers **\- last updated 29th July 2019**.
 
 Check it out at
 http://bl.ocks.org/4ndyparr/raw/68fe672f38bf4fbede73173d6167e553/.

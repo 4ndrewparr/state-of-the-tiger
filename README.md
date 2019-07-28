@@ -6,10 +6,10 @@ A simple D3.js data visualization to explore the conservation status of tigers.
 Check it out at
 http://bl.ocks.org/4ndyparr/raw/68fe672f38bf4fbede73173d6167e553/.
 
-Data applied:
+Data applied:  
 https://github.com/4ndyparr/state-of-the-tiger/blob/master/tigers.csv
 
-Sources:
+Sources:  
 http://tigers.panda.org/news/wild-tigers-numbers-increase-to-3890/
 https://gbtimes.com/siberian-tiger-family-caught-on-camera-in-ne-china
 https://blog.wwf.ca/blog/2018/07/27/13-countries-can-find-wild-tigers/

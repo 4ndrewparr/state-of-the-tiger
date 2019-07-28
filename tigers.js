@@ -29,9 +29,12 @@
 
     var subspecies_x = [175, 450, 650, 850, 1050]
 
-    var subspecies = ["bengal", "siberian", "sumatran", "indochinese", "malayan"]
+    //var subspecies = ["bengal", "siberian", "sumatran", "indochinese", "malayan"]    
+    var subspecies = ["bengal", "sumatran", "siberian", "indochinese", "malayan"] // when n sumatran > n siberian
 
-    var scientifics = ["P. tigris tigris", "P. tigris corbetti", "P. tigris jacksoni", "P. tigris sondaica", "P. tigris altaica"]
+    //var scientifics = ["P. tigris tigris", "P. tigris corbetti", "P. tigris jacksoni", "P. tigris sondaica", "P. tigris altaica"] // wrong
+    //var scientifics = ["P. tigris tigris", "P. tigris altaica", "P. tigris sondaica", "P. tigris corbetti", "P. tigris jacksoni"] // fixed
+    var scientifics = ["P. tigris tigris", "P. tigris sondaica", "P. tigris altaica", "P. tigris corbetti", "P. tigris jacksoni"] // when n sumatran > n siberian
 
     // bubbles simulation defs
     var forceXCombine = d3.forceX(width / 2)
@@ -71,9 +74,13 @@
     function ready (error, datapoints) {
         //console.log(datapoints)
 
-        var totaltigers = d3.sum(datapoints, function(d) {
+        //var format = d3.format(",") // # THOUSANDS COMMA BUG
+        var totaltigers = d3.sum(datapoints, function(d) { 
+        //var totaltigers = format(d3.sum(datapoints, function(d) { // # THOUSANDS COMMA BUG
             return Math.floor((parseInt(d.min) + parseInt(d.max)) / 2)
-        })        
+        }) 
+        //})) // # THOUSANDS COMMA BUG
+
         // globals
         var text_location = svg.append("text")
             .attr("x", 1100)
@@ -262,8 +269,9 @@
                     d3.select("#totalcircle").transition().duration(750).style("opacity", 1);                
                 }
                 d3.selectAll(".subspecies").transition().duration(750).style("opacity", 0)
-                // d3.select("#map_" + d.country.toLowerCase())                
-                d3.select("#map").attr("xlink:href", d.country.toLowerCase() + ".png") // while locally it is not case sensitive, in the Gist/bl.ocks .toLowerCase() must be applied
+                //d3.select("#map_" + d.country.toLowerCase()) 
+                //d3.select("#map").attr("xlink:href", d.country + ".png")
+                d3.select("#map").attr("xlink:href", d.country.toLowerCase() + ".png") // needed in gist
                 .transition().duration(1500).style("opacity", 1)
             })             
             .on("mouseover", function(d) {                

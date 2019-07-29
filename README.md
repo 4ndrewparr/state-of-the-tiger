@@ -2,7 +2,7 @@
 A simple D3.js data visualization project to explore the conservation status of tigers **\- last updated 29th July 2019**.
 
 Check it out at
-http://bl.ocks.org/4ndyparr/raw/68fe672f38bf4fbede73173d6167e553/.
+http://bl.ocks.org/4ndyparr/raw/74526bc328275b5eaf2dc61e45ce2a13/.
 
 
 

@@ -18,5 +18,6 @@ https://www.mmtimes.com/news/group-hopes-conserve-endangered-tigers-myanmar.html
 https://www.nature.com/articles/s41467-017-01656-4  
 http://www.asianews.it/news-en/Vientiane,-illegal-tiger-farms-continue.-Three-specimens-die-42932.html  
 https://www.thestar.com.my/news/nation/2019/03/18/malayan-tiger-may-be-extinct-in-five-to-10-years-says-xavier/  
+https://www.theguardian.com/world/2019/jul/29/india-wild-tiger-population-rises-conservation  
   
 Please feel free to make a pull request to add/correct data!

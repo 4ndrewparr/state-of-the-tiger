@@ -1,6 +1,7 @@
 (function() {
     var width = 1175,
-        height = 550;
+        //height = 550;
+        height = 575;
 
     var svg = d3.select("#chart")
         .append("svg")
@@ -24,8 +25,10 @@
         .attr("xlink:href", "tiger_pattern_color.png")
 
     var radiusScale = d3.scaleSqrt()
-        .domain([14, 2250])
-        .range([7, 105])
+        //.domain([14, 2250])
+        .domain([5, 2967])
+        //.range([7, 105])
+        .range([5, 125]) // eye-test correction
 
     var subspecies_x = [175, 450, 650, 850, 1050]
 
@@ -46,7 +49,8 @@
 
     var forceXLeave = d3.forceX(width + 200).strength(1)
 
-    var forceYCombine = d3.forceY(0).strength(0.05)        
+    //var forceYCombine = d3.forceY(0).strength(0.05)
+    var forceYCombine = d3.forceY(50).strength(0.05) // to allign with maps
 
     var forceCollide = d3.forceCollide(function(d) {
             return  radiusScale((parseInt(d.min) + parseInt(d.max)) / 2) + 3
@@ -148,7 +152,7 @@
             .attr("x", function(d, i) {
                 return subspecies_x[i]
             })
-            .attr("y", 185)            
+            .attr("y", 185 + 45)            
             .attr("text-anchor", "middle")
             .attr("opacity", 0)
             .text(function(d) {
@@ -163,7 +167,7 @@
             .attr("x", function(d, i) {
                 return subspecies_x[i]
             })
-            .attr("y", 215)            
+            .attr("y", 215 + 45)            
             .attr("text-anchor", "middle")
             .attr("opacity", 0)
             .text(function(d) {
@@ -176,7 +180,7 @@
             .attr("x", function(d, i) {
                 return subspecies_x[i]
             })
-            .attr("y", 235)            
+            .attr("y", 235 + 45)            
             .attr("text-anchor", "middle")
             .attr("font-style", "italic")
             .attr("opacity", 0)

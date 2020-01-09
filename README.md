@@ -1,5 +1,5 @@
 # state-of-the-tiger
-A very simple D3.js data visualization project to play with bubble charts and d3-force that explores the conservation status of tigers **\- last updated 29th July 2019**.
+A very simple D3.js data visualization project to play with bubble charts and *d3-force*. It explores the conservation status of tigers **\- last updated 29th July 2019**.
 
 Check it out at
 http://bl.ocks.org/4ndyparr/raw/74526bc328275b5eaf2dc61e45ce2a13/.

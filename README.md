@@ -1,5 +1,5 @@
 # state-of-the-tiger
-A simple D3.js data visualization project to explore the conservation status of tigers **\- last updated 29th July 2019**.
+A very simple D3.js data visualization project to play with bubble charts and d3-force that explores the conservation status of tigers **\- last updated 29th July 2019**.
 
 Check it out at
 http://bl.ocks.org/4ndyparr/raw/74526bc328275b5eaf2dc61e45ce2a13/.
@@ -20,4 +20,4 @@ http://www.asianews.it/news-en/Vientiane,-illegal-tiger-farms-continue.-Three-sp
 https://www.thestar.com.my/news/nation/2019/03/18/malayan-tiger-may-be-extinct-in-five-to-10-years-says-xavier/  
 https://www.theguardian.com/world/2019/jul/29/india-wild-tiger-population-rises-conservation  
   
-Please feel free to make a pull request to add/correct data!
+Feel free to make a pull request to add/correct data!
